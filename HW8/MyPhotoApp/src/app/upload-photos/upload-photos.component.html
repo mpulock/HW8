@@ -1,0 +1,15 @@
+  <div class="card">
+      <div class="card-body">
+          <a [routerLink]="['/album', albumId, albumTitle]">
+              <button type="button" class ="btn btn-outline-primary float-right">Back to Album</button>
+          </a>
+      </div>
+    </div>
+
+<h1>Upload photos in {{albumTitle}}</h1>
+
+
+<angular-file-uploader 
+      [config]="afuConfig"
+      (ApiResponse)="fileUploaded($event)">
+</angular-file-uploader>

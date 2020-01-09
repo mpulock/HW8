@@ -1,0 +1,19 @@
+
+
+
+<h1>Profile: {{userName}}</h1>
+
+
+<div *ngIf="user">
+    {{user.name}}
+
+    <br/>
+
+    <img src="{{user.profilePhotoUrl}}" class="rounded img-thumbnail" width="40%">
+    
+    <br/>
+
+
+    {{user.emailAddress}}
+
+</div>

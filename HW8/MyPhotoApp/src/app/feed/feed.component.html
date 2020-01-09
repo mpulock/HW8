@@ -1,0 +1,27 @@
+
+<h1>Recent Albums:</h1>
+
+  
+  <div class="row">
+    <div class="row" *ngFor="let album of albums">
+      
+      <div class="col-sm-6">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">{{album.title}}</h5>
+            <p class="card-text">
+              <a href="/album/{{album.id}}/{{album.title}}">
+                <img class="card-img-top" src="{{album.coverPhotoUrl}}" alt="{{album.title}}" style="border: 1px;">
+              </a>
+            </p>
+            <a href="#" class="btn btn-primary">{{album.title}}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    
+  
+  
+  
